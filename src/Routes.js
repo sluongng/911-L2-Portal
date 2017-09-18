@@ -13,6 +13,7 @@ import KanbanBoard from "./containers/KanbanBoard";
 export default ({childProps}) => (
   <Switch>
     {/* <AppliedRoute path="/" exact component={Home} props={childProps}/> */}
+    <AppliedRoute path="/" exact component={KanbanBoard} props={childProps}/>
     <AppliedRoute path="/kanban" exact component={KanbanBoard} props={childProps}/>
 
     { /* Safety route to handle 404 */ }
